@@ -31,6 +31,4 @@ CREATE TABLE `witness_statement` (
 
 DROP USER IF EXISTS 'springuser'@'localhost';
 CREATE USER 'springuser'@'localhost' identified by 'pspringuser';
-GRANT ALL ON assignment.* to 'springuser'@'localhost';
-REVOKE ALL ON assignment.* from 'springuser'@'localhost';
 GRANT SELECT, INSERT, DELETE, UPDATE ON assignment.* to 'springuser'@'localhost';
