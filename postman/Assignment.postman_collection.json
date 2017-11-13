@@ -1,0 +1,146 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Assignment",
+		"_postman_id": "2f9180a5-623d-6d9c-c9fa-57442ea6bbee",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "user ufliao1 wrong credentials",
+			"request": {
+				"url": "http://localhost:8080/assignment/witness-statement",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic dWZsaWFvMTp3cm9uZ3Bhc3N3b3Jk",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "user ufliao1 Add",
+			"request": {
+				"url": "http://localhost:8080/assignment/witness-statement",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic dWZsaWFvMTpwZmxpYW8x",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstName\": \"First1\",\n    \"middleName\": \"Middle1\",\n    \"lastName\": \"Last1\",\n    \"gender\": \"M\",\n    \"dateOfBirth\": \"1/1/2000\",\n    \"address\": \"Some address1\",\n    \"email\": \"id1@provider.com\",\n    \"phone\": \"111-111-1111\",\n    \"witnessStatement\": \"i saw something 1\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "user ufliao2 Add",
+			"request": {
+				"url": "http://localhost:8080/assignment/witness-statement",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic dWZsaWFvMjpwZmxpYW8y",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstName\": \"First2\",\n    \"middleName\": \"Middle2\",\n    \"lastName\": \"Last2\",\n    \"gender\": \"F\",\n    \"dateOfBirth\": \"2/2/2000\",\n    \"address\": \"Some address2\",\n    \"email\": \"id2@provider.com\",\n    \"phone\": \"222-222-2222\",\n    \"witnessStatement\": \"i saw something 2\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "user ufliao1 Get All",
+			"request": {
+				"url": "http://localhost:8080/assignment/witness-statement",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic dWZsaWFvMTpwZmxpYW8x",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "user ufliao2 Get All",
+			"request": {
+				"url": "http://localhost:8080/assignment/witness-statement",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic dWZsaWFvMjpwZmxpYW8y",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "user ufliao1 Get",
+			"request": {
+				"url": "http://localhost:8080/assignment/witness-statement/3",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic dWZsaWFvMTpwZmxpYW8x",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "user ufliao2 Get",
+			"request": {
+				"url": "http://localhost:8080/assignment/witness-statement/4",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic dWZsaWFvMjpwZmxpYW8y",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
