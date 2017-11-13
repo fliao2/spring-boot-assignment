@@ -63,7 +63,7 @@ An example for the body of the POST message would be:
 }
 
 You can use whatever tool you want to test it, such as curl, but a Postman project is included in the \postman\Assignment.postman_collection.json file which can be imported into Postman for easy testing. The Postman project contains the following messages that can be used for testing:
-- Incorrect basic authentication setttings
+- Incorrect basic authentication settings
 - Add messages for ufliao1 and ufliao2
 - Get all messages for ufliao1 and ufliao2
 - Get message for ufliao1 and ufliao2
